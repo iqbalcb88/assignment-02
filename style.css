@@ -144,7 +144,7 @@ article p {
 
 /* Transform and animation of header section*/
 .header-right {
-  animation: swing 5s infinite;
+  animation: swing 4s infinite;
   animation-timing-function: linear;
 }
 @keyframes swing {
@@ -152,22 +152,22 @@ article p {
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(-15deg);
+    transform: rotate(-5deg);
   }
 
   50% {
     transform: rotate(0deg);
   }
   75% {
-    transform: rotate(15deg);
+    transform: rotate(5deg);
   }
   100% {
     transform: rotate(0deg);
   }
 }
-.header-left:hover,
-.header-right:hover {
-  transform: scale(1.2);
+.header-left:hover {
+  transform-origin: left;
+  transform: scaleX(1.2) scaleY(1.2);
   transition: 0.5s ease-in;
 }
 
@@ -192,6 +192,7 @@ article p {
 
 /* start animation section */
 .animation {
+  position: relative;
   width: 100%;
   margin-top: 3em;
   padding: 2.5em 0;
@@ -317,5 +318,8 @@ footer .footer-logo {
     color: var(--color-white);
     font-size: 1em;
     padding: 0.25em;
+  }
+  .heart {
+    display: none;
   }
 }
