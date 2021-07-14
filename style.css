@@ -166,6 +166,33 @@ footer .footer-logo {
 }
 /* footer end */
 
+/* Transform and animation */
+
+.header-left:hover,
+.header-right:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in;
+}
+
+/* video section */
+.winning-photo {
+  position: relative;
+}
+.winning-article {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.507);
+  position: absolute;
+  bottom: 0.5em;
+  color: white;
+  margin: 0 9%;
+}
+.winning-photo img {
+  width: 100%;
+  height: 315px;
+}
+
+/* end of video section */
+
 /* Start media query */
 
 @media screen and (max-width: 768px) {
@@ -188,5 +215,8 @@ footer .footer-logo {
     grid-template-columns: 1fr;
     grid-gap: 2em;
     margin: 3em 1em;
+  }
+  iframe {
+    width: 100%;
   }
 }
